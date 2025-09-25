@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  padding: 10px 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00c9a7;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Dark Mode */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+}
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+body.dark-mode header, body.dark-mode footer {
+  background: #000;
+}
+
+/* Hero Section with Video */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0; left: 0;
+  z-index: -2;
+}
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+.hero-content .btn-primary {
+  padding: 10px 20px;
+  background: #00c9a7;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 10%;
+}
+.feature {
+  text-align: center;
+  flex: 1;
+  margin: 0 15px;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 10%;
+  background: #f4f4f4;
+  text-align: center;
+}
+.stat h2 {
+  font-size: 2.5rem;
+  color: #00c9a7;
+}
+
+/* Pages */
+.page {
+  padding: 50px 10%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+.contact-form button {
+  background: #00c9a7;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Chatbot Widget */
+.chatbot {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chat-header {
+  background: #00c9a7;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+.chat-body {
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.chat-input {
+  display: flex;
+}
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+}
+.chat-input button {
+  border: none;
+  padding: 10px;
+  background: #00c9a7;
+  color: #fff;
+  cursor: pointer;
+}
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00c9a7;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}

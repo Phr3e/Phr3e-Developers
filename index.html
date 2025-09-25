@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qubit AI | Home</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Qubit<span>AI</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero with Video -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Empowering Businesses with <span>AI</span></h1>
+      <p>From predictive analytics to intelligent automation, we transform ideas into intelligent solutions.</p>
+      <a href="services.html" class="btn-primary">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <h3>Machine Learning</h3>
+      <p>We design custom ML models to solve real-world challenges.</p>
+    </div>
+    <div class="feature">
+      <h3>Data Science</h3>
+      <p>Unlock actionable insights from complex datasets.</p>
+    </div>
+    <div class="feature">
+      <h3>AI Integrations</h3>
+      <p>Seamlessly embed AI into your workflows and platforms.</p>
+    </div>
+  </section>
+
+  <!-- Impact Stats -->
+  <section class="stats">
+    <div class="stat">
+      <h2 class="counter" data-target="50">0</h2>
+      <p>AI Projects Delivered</p>
+    </div>
+    <div class="stat">
+      <h2 class="counter" data-target="20">0</h2>
+      <p>Industries Served</p>
+    </div>
+    <div class="stat">
+      <h2 class="counter" data-target="95">0</h2>
+      <p>Client Satisfaction %</p>
+    </div>
+  </section>
+
+  <!-- Chatbot Widget -->
+  <div class="chatbot" id="chatbot">
+    <div class="chat-header">💬 Qubit AI Assistant</div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Ask me anything...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+  <button class="chat-toggle" id="chatToggle">🤖</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Qubit AI. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
